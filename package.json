@@ -2,7 +2,7 @@
   "name": "timestamp-microservice",
   "version": "1.0.0",
   "description": "Timestamp Microservice API",
-  "main": "index.js",
+  "main": "./server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hexjelly/timestamp-microservice#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "mongoose": "^4.3.6"
   }
 }
