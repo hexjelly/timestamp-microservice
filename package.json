@@ -1,0 +1,22 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "Timestamp Microservice API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexjelly/timestamp-microservice.git"
+  },
+  "author": "Hexjelly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hexjelly/timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/hexjelly/timestamp-microservice#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
