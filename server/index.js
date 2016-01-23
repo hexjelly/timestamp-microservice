@@ -11,10 +11,7 @@ function getJSONTimeResult (time) {
   time = new Date(time == parseInt(time, 10) ? time*1000 : time);
   var unixTime = time.valueOf();
   var naturalTime = time.toLocaleString('en-us', { month: "long" }) + ' ' + time.getDate() + ', ' + time.getFullYear();
-  var result = {
-    'unix': null,
-    'natural': null
-  };
+  var result = { 'unix' : null, 'natural' :null};
 
   if (unixTime) {
     result.unix = unixTime / 1000;
