@@ -39,13 +39,13 @@ describe('getJSONTimeResult', function () {
 
   it('Null result if mangled date', function () {
     var badDate = JSON.stringify(getJSONTimeResult('Not a date!'));
-    var expected = JSON.stringify({ 'unix': null, 'natural': null });
+    var expected = JSON.stringify({"unix":null,"natural":null});
     assert.equal(badDate, expected);
   });
 
   it('Correct result for \'21 Jan 2001\'', function () {
     var goodDate = JSON.stringify(getJSONTimeResult('21 Jan 2001'));
-    var expected = JSON.stringify({ 'unix': 980031600, 'natural': 'January 21, 2001' });
+    var expected = JSON.stringify({"unix":980031600,"natural":"January 21, 2001"});
     assert.equal(goodDate, expected);
   });
 
@@ -58,6 +58,12 @@ describe('getJSONTimeResult', function () {
   it('Correct result for \'1950 february 29\'', function () {
     var goodDate = JSON.stringify(getJSONTimeResult('1950 february 29'));
     var expected = JSON.stringify({"unix":-626058000,"natural":"March 1, 1950"});
+    assert.equal(goodDate, expected);
+  });
+
+  it('Correct result for \'1591827191\'', function () {
+    var goodDate = JSON.stringify(getJSONTimeResult(1591827191));
+    var expected = JSON.stringify({"unix":1591827191,"natural":"June 11, 2020"});
     assert.equal(goodDate, expected);
   });
 });
