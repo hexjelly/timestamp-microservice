@@ -1,2 +1,6 @@
-language: node_js
-node_js: node
+before_install:
+- export TZ=Europe/Oslo
+language:
+- node_js
+node_js:
+- node
