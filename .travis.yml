@@ -1,8 +1,8 @@
 before_install:
-- export TZ=Europe/Oslo
+  - export TZ=Europe/Oslo
 language:
-- node_js
+  - node_js
 node_js:
-- node
+  - 8.1.4
 after_success:
-- 'npm run coveralls'
+  - 'npm run coveralls'

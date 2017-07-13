@@ -1,8 +1,11 @@
 {
   "name": "timestamp-microservice",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Timestamp Microservice API",
   "main": "index.js",
+  "engines": {
+    "node": "8.1.4"
+  },
   "scripts": {
     "start": "node index",
     "test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec",
